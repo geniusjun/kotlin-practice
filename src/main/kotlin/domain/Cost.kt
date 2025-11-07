@@ -1,6 +1,7 @@
 package org.example.domain
 
 import org.example.global.Parser
+import org.example.global.constants.ErrorMessage.INVALID_UNIT_ERROR
 import org.example.global.constants.LottoConstants
 
 class Cost private constructor(val price: Int) {
@@ -25,7 +26,10 @@ class Cost private constructor(val price: Int) {
 
         private fun validateUnit(value: Int) {
             if (isNotDivisible(value)) {
-                throw IllegalArgumentException(String.format("%d원 단위의 숫자만 입력해주세요.", LottoConstants.COST_UNIT))
+                throw IllegalArgumentException(
+                    INVALID_UNIT_ERROR
+                        .formatted(LottoConstants.COST_UNIT)
+                )
             }
         }
 
