@@ -1,6 +1,6 @@
 package org.example.global.constants
 
-enum class NumberType(val value: Int) {
+enum class LottoConstants(val value: Int) {
     COST_UNIT(1000),
     MIN_LOTTO_NUMBER(1),
     MAX_LOTTO_NUMBER(45),

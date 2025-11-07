@@ -1,7 +1,7 @@
 package org.example.domain
 
 import org.example.global.constants.ErrorMessage
-import org.example.global.constants.NumberType
+import org.example.global.constants.LottoConstants
 
 class LottoNumber private constructor(val value: Int) {
 
@@ -36,8 +36,8 @@ class LottoNumber private constructor(val value: Int) {
         }
 
         private fun isInvalidRange(value: Int): Boolean {
-            return value < NumberType.MIN_LOTTO_NUMBER.value ||
-                    value > NumberType.MAX_LOTTO_NUMBER.value
+            return value < LottoConstants.MIN_LOTTO_NUMBER.value ||
+                    value > LottoConstants.MAX_LOTTO_NUMBER.value
         }
     }
 }
