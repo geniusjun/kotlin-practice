@@ -1,6 +1,6 @@
 package org.example.view
 
-import org.example.global.constants.ErrorMessage
+import org.example.global.constants.ErrorMessage.BLANK_INPUT_ERROR
 
 class InputView {
 
@@ -11,7 +11,7 @@ class InputView {
 
     private fun validateBlank(message: String): String {
         if (message.isBlank()) {
-            throw IllegalArgumentException(ErrorMessage.BLANK_INPUT_ERROR.message)
+            throw IllegalArgumentException(BLANK_INPUT_ERROR.template)
         }
         return message
     }

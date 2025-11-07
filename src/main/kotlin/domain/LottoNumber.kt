@@ -1,6 +1,6 @@
 package org.example.domain
 
-import org.example.global.constants.ErrorMessage
+import org.example.global.constants.ErrorMessage.INVALID_RANGE_ERROR
 import org.example.global.constants.LottoConstants
 
 class LottoNumber private constructor(val value: Int) {
@@ -31,7 +31,7 @@ class LottoNumber private constructor(val value: Int) {
 
         private fun validateInvalidRange(value: Int) {
             if (isInvalidRange(value)) {
-                throw IllegalArgumentException(ErrorMessage.INVALID_RANGE_ERROR.message)
+                throw IllegalArgumentException(INVALID_RANGE_ERROR.template)
             }
         }
 
