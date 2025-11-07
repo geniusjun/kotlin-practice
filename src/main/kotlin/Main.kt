@@ -1,7 +1,10 @@
 package org.example
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import org.example.controller.LottoController
+import org.example.view.InputView
+
 fun main() {
-    println("Hello Kotlin")
+    val inputView = InputView()
+    val controller = LottoController(inputView)
+    controller.run()
 }
