@@ -10,7 +10,7 @@ class InputLoop(private val out: OutputView) {
             try {
                 return action()
             } catch (e: IllegalArgumentException) {
-                out.printlnMessage((ERROR_PREFIX + e.message) ?: "")
+                out.printlnMessage((ERROR_PREFIX + e.message))
             }
         }
     }
