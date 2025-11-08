@@ -1,7 +1,5 @@
-package org.example
-
-import org.example.controller.LottoController
-import org.example.view.InputView
+import lotto.controller.LottoController
+import lotto.view.InputView
 
 fun main() {
     val inputView = InputView()

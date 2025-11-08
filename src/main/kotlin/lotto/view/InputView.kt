@@ -1,6 +1,6 @@
-package org.example.view
+package lotto.view
 
-import org.example.global.constants.ErrorMessage.BLANK_INPUT_ERROR
+import lotto.global.constants.ErrorMessage.BLANK_INPUT_ERROR
 
 class InputView {
 

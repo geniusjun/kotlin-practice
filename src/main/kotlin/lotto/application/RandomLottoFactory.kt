@@ -1,8 +1,8 @@
-package org.example.application
+package lotto.application
 
-import org.example.domain.Lotto
-import org.example.domain.LottoNumber
-import org.example.global.constants.LottoConstants.*
+import lotto.domain.Lotto
+import lotto.domain.LottoNumber
+import lotto.global.constants.LottoConstants.*
 
 
 class RandomLottoFactory : LottoFactory {

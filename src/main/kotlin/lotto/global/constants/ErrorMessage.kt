@@ -1,4 +1,4 @@
-package org.example.global.constants
+package lotto.global.constants
 
 const val ERROR_PREFIX = "[ERROR] "
 

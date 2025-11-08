@@ -1,4 +1,4 @@
-package org.example.view
+package lotto.view
 
 class OutputView {
 

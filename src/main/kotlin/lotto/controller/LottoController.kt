@@ -1,6 +1,6 @@
-package org.example.controller
+package lotto.controller
 
-import org.example.view.InputView
+import lotto.view.InputView
 
 class LottoController(
     private val inputView: InputView,

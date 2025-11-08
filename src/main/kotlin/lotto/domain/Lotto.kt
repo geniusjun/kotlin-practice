@@ -1,8 +1,8 @@
-package org.example.domain
+package lotto.domain
 
-import org.example.global.constants.ErrorMessage.INVALID_LOTTO_SIZE_ERROR
-import org.example.global.constants.ErrorMessage.NUMBER_DUPLICATE_ERROR
-import org.example.global.constants.LottoConstants.LOTTO_SIZE
+import lotto.global.constants.ErrorMessage.INVALID_LOTTO_SIZE_ERROR
+import lotto.global.constants.ErrorMessage.NUMBER_DUPLICATE_ERROR
+import lotto.global.constants.LottoConstants.LOTTO_SIZE
 
 class Lotto private constructor(numbers: List<LottoNumber>) {
 

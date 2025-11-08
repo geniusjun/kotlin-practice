@@ -1,4 +1,4 @@
-package org.example.domain
+package lotto.domain
 
 class Lottos private constructor(lottos: List<Lotto>) {
 

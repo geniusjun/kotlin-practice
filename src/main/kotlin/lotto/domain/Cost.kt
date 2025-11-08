@@ -1,8 +1,8 @@
-package org.example.domain
+package lotto.domain
 
-import org.example.global.Parser
-import org.example.global.constants.ErrorMessage.INVALID_UNIT_ERROR
-import org.example.global.constants.LottoConstants
+import lotto.global.Parser
+import lotto.global.constants.ErrorMessage.INVALID_UNIT_ERROR
+import lotto.global.constants.LottoConstants
 
 class Cost private constructor(val price: Int) {
 
