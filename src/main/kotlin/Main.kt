@@ -1,8 +1,6 @@
-import lotto.controller.LottoController
-import lotto.view.ui.InputView
+import lotto.config.AppConfig
 
 fun main() {
-    val inputView = InputView()
-    val controller = LottoController(inputView)
-    controller.run()
+    val lottoController = AppConfig.lottoController()
+    lottoController.play()
 }
