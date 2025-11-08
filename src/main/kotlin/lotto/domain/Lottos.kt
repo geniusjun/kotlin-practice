@@ -1,4 +1,4 @@
-package org.example.domain
+package lotto.domain
 
 class Lottos private constructor(lottos: List<Lotto>) {
 
@@ -11,8 +11,6 @@ class Lottos private constructor(lottos: List<Lotto>) {
     }
 
     fun size(): Int = lottos.size
-
-    fun asList(): List<Lotto> = lottos
 
     fun asSequence(): Sequence<Lotto> = lottos.asSequence()
 }

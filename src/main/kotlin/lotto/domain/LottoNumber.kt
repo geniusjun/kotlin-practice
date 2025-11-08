@@ -1,7 +1,7 @@
-package org.example.domain
+package lotto.domain
 
-import org.example.global.constants.ErrorMessage.INVALID_RANGE_ERROR
-import org.example.global.constants.LottoConstants
+import lotto.global.constants.ErrorMessage.INVALID_RANGE_ERROR
+import lotto.global.constants.LottoConstants
 
 class LottoNumber private constructor(val value: Int) {
 

@@ -1,7 +1,7 @@
-package org.example.global
+package lotto.global
 
-import org.example.domain.LottoNumber
-import org.example.global.constants.ErrorMessage.NUMBER_FORMAT_ERROR
+import lotto.domain.LottoNumber
+import lotto.global.constants.ErrorMessage.NUMBER_FORMAT_ERROR
 
 object Parser {
 

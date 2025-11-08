@@ -1,10 +1,6 @@
-package org.example
-
-import org.example.controller.LottoController
-import org.example.view.InputView
+import lotto.config.AppConfig
 
 fun main() {
-    val inputView = InputView()
-    val controller = LottoController(inputView)
-    controller.run()
+    val lottoController = AppConfig.lottoController()
+    lottoController.play()
 }

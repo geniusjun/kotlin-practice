@@ -1,8 +1,8 @@
-package org.example.domain
+package lotto.domain
 
-import org.example.global.constants.ErrorMessage.INVALID_LOTTO_SIZE_ERROR
-import org.example.global.constants.ErrorMessage.NUMBER_DUPLICATE_ERROR
-import org.example.global.constants.LottoConstants.LOTTO_SIZE
+import lotto.global.constants.ErrorMessage.INVALID_LOTTO_SIZE_ERROR
+import lotto.global.constants.ErrorMessage.NUMBER_DUPLICATE_ERROR
+import lotto.global.constants.LottoConstants.LOTTO_SIZE
 
 class Lotto private constructor(numbers: List<LottoNumber>) {
 
@@ -44,7 +44,7 @@ class Lotto private constructor(numbers: List<LottoNumber>) {
 
         private fun validateLottoSize(numbers: List<LottoNumber>) {
             if (numbers.size != LOTTO_SIZE.value) {
-                throw IllegalArgumentException(INVALID_LOTTO_SIZE_ERROR.formatted(LOTTO_SIZE))
+                throw IllegalArgumentException(INVALID_LOTTO_SIZE_ERROR.format(LOTTO_SIZE.value))
             }
         }
     }

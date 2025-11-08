@@ -1,8 +1,8 @@
-package org.example.domain
+package lotto.domain
 
-import org.example.global.Parser
-import org.example.global.constants.ErrorMessage.INVALID_UNIT_ERROR
-import org.example.global.constants.LottoConstants
+import lotto.global.Parser
+import lotto.global.constants.ErrorMessage.INVALID_UNIT_ERROR
+import lotto.global.constants.LottoConstants
 
 class Cost private constructor(val price: Int) {
 
@@ -28,7 +28,7 @@ class Cost private constructor(val price: Int) {
             if (isNotDivisible(value)) {
                 throw IllegalArgumentException(
                     INVALID_UNIT_ERROR
-                        .formatted(LottoConstants.COST_UNIT)
+                        .format(LottoConstants.COST_UNIT.value)
                 )
             }
         }

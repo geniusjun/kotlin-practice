@@ -1,4 +1,4 @@
-package org.example.global.constants
+package lotto.global.constants
 
 enum class LottoConstants(val value: Int) {
     COST_UNIT(1000),
