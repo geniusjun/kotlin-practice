@@ -13,7 +13,7 @@ class OutputView {
         printLines(LottoFormatter.lottoLines(lottos))
     }
 
-    fun printLines(lines: List<String>) {
+    fun printLines(lines: Sequence<String>) {
         lines.forEach(::printlnMessage)
     }
 }

@@ -58,6 +58,6 @@ class LottoController(
     }
 
     private fun printWinningStatistics(result: WinningResult, cost: lotto.domain.Cost) {
-        outputView.printLines(StatisticsFormatter.lines(result, cost))
+        outputView.printLines(StatisticsFormatter.lines(result, cost).asSequence())
     }
 }

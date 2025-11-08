@@ -15,8 +15,8 @@ object LottoFormatter {
     /**
      * 로또 여러 장을 문자열 리스트로 반환한다.
      */
-    fun lottoLines(lottos: Lottos): List<String> =
-        lottos.asList().map { lottoLine(it) }
+    fun lottoLines(lottos: Lottos): Sequence<String> =
+        lottos.asSequence().map { lottoLine(it) }
 
     /**
      * 한 장을 "[1, 8, 11, 31, 41, 42]" 형태로 정렬하여 반환한다.

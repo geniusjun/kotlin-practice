@@ -23,7 +23,7 @@ class WinningResult private constructor() {
 
         fun of(purchased: Lottos, drawn: WinningNumbers): WinningResult {
             val result = WinningResult()
-            purchased.asList()
+            purchased.asSequence()
                 .map { decideType(it, drawn) }
                 .forEach { result.increment(it) }
             return result
