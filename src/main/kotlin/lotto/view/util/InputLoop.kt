@@ -1,5 +1,6 @@
 package lotto.view.util
 
+import lotto.global.constants.ERROR_PREFIX
 import lotto.view.ui.OutputView
 
 class InputLoop(private val out: OutputView) {
@@ -9,7 +10,7 @@ class InputLoop(private val out: OutputView) {
             try {
                 return action()
             } catch (e: IllegalArgumentException) {
-                out.printlnMessage(e.message ?: "")
+                out.printlnMessage((ERROR_PREFIX + e.message) ?: "")
             }
         }
     }

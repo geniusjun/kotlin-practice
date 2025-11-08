@@ -44,7 +44,7 @@ class Lotto private constructor(numbers: List<LottoNumber>) {
 
         private fun validateLottoSize(numbers: List<LottoNumber>) {
             if (numbers.size != LOTTO_SIZE.value) {
-                throw IllegalArgumentException(INVALID_LOTTO_SIZE_ERROR.formatted(LOTTO_SIZE))
+                throw IllegalArgumentException(INVALID_LOTTO_SIZE_ERROR.format(LOTTO_SIZE.value))
             }
         }
     }

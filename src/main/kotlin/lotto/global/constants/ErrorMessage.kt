@@ -12,7 +12,6 @@ enum class ErrorMessage(val template: String) {
     BONUS_NUMBER_DUPLICATE_ERROR("보너스 번호는 입력하신 당첨 번호와 중복되지 않아야 합니다.")
     ;
 
-    fun formatted(vararg args: Any): String {
-        return ERROR_PREFIX + template.format(*args)
-    }
+    fun format(vararg args: Any): String =
+        template.format(*args)
 }

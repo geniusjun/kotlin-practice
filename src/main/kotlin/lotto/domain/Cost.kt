@@ -28,7 +28,7 @@ class Cost private constructor(val price: Int) {
             if (isNotDivisible(value)) {
                 throw IllegalArgumentException(
                     INVALID_UNIT_ERROR
-                        .formatted(LottoConstants.COST_UNIT)
+                        .format(LottoConstants.COST_UNIT.value)
                 )
             }
         }
