@@ -1,4 +1,4 @@
-package lotto.view
+package lotto.view.ui
 
 import lotto.global.constants.ErrorMessage.BLANK_INPUT_ERROR
 

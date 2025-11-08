@@ -1,5 +1,5 @@
 import lotto.controller.LottoController
-import lotto.view.InputView
+import lotto.view.ui.InputView
 
 fun main() {
     val inputView = InputView()

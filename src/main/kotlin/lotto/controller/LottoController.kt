@@ -1,6 +1,6 @@
 package lotto.controller
 
-import lotto.view.InputView
+import lotto.view.ui.InputView
 
 class LottoController(
     private val inputView: InputView,
