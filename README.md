@@ -6,3 +6,7 @@
 ## 목표
 - 기존 자바 로직을 유지하면서 코틀린 문법으로 자연스럽게 리팩토링
 - 코틀린과 친해지기
+
+## 블로그에 정리하며 진행하기
+- https://geniusjun4663.tistory.com/53
+- https://geniusjun4663.tistory.com/54
